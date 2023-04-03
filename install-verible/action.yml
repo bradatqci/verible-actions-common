@@ -29,4 +29,5 @@ runs:
           echo "Downloading $VERIBLE_TARBALL"
           wget -qO- $VERIBLE_TARBALL | tar -zxvf - -C verible --strip-components=1
           ls -al
-          sudo cp -r ./bin /usr/local/bin/
+          ls -al verible
+          sudo cp -r ./verible/bin/* /usr/local/bin/
