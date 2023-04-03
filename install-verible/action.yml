@@ -28,6 +28,8 @@ runs:
           fi
           echo "Downloading $VERIBLE_TARBALL"
           wget -qO- $VERIBLE_TARBALL | tar -zxvf - -C verible --strip-components=1
-          ls ./verible/bin
-          ls ./verible/bin/*
+          ls -al ./verible
+          ls -al ./verible/bin
+          ls -al ./verible/bin/verible-patch-tool
+          ls -al ./verible/bin/*
           sudo cp ./verible/bin/* /usr/local/bin
